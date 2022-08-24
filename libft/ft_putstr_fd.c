@@ -6,7 +6,7 @@
 /*   By: rsantos <rsantos@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/29 13:08:57 by rsantos           #+#    #+#             */
-/*   Updated: 2022/08/10 02:28:22 by rsantos          ###   ########.fr       */
+/*   Updated: 2022/08/24 16:01:03 by rsantos          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,9 @@ void    ft_putstr_fd(char const *str, int fd)
 {
     int i;
 
-    i = 0;
+    i = -1;
     if (!str)
         return;
-    while(str[i])
-    {
+    while(str[++i])
         ft_putchar_fd(str[i], fd);
-        i++;
-    }
 }
