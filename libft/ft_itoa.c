@@ -6,13 +6,13 @@
 /*   By: rsantos <rsantos@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/30 11:52:45 by rsantos           #+#    #+#             */
-/*   Updated: 2022/08/18 16:52:49 by rsantos          ###   ########.fr       */
+/*   Updated: 2022/08/23 18:44:04 by rsantos          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	nb_len(int nb)
+ static	size_t	nb_len(int nb)
 {
 	size_t len;
 
