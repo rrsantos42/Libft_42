@@ -35,7 +35,6 @@ char	*ft_itoa(int num)
 
 	if(num == 0)
 		return("0");
-		
 	len = nb_len(num);
 	nb = num;
 	str = malloc((len + 1) * sizeof(char));
