@@ -6,12 +6,11 @@
 /*   By: rsantos <rsantos@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/30 11:55:06 by rsantos           #+#    #+#             */
-/*   Updated: 2022/08/10 03:13:52 by rsantos          ###   ########.fr       */
+/*   Updated: 2022/10/11 17:38:27 by rsantos          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
 
 void	ft_bzero(void *str, size_t n)
 {
@@ -19,7 +18,7 @@ void	ft_bzero(void *str, size_t n)
 	char	*dest;
 
 	if (!str)
-		return;
+		return ;
 	i = 0;
 	dest = str;
 	while (i < n)

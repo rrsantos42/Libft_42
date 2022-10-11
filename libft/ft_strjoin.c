@@ -6,7 +6,7 @@
 /*   By: rsantos <rsantos@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/03 18:18:27 by rsantos           #+#    #+#             */
-/*   Updated: 2022/08/24 16:09:54 by rsantos          ###   ########.fr       */
+/*   Updated: 2022/10/11 18:31:14 by rsantos          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,25 +14,25 @@
 
 char	*ft_strjoin(const char *str1, const char *str2)
 {
-	int i;
-	int j;
-	int size1;
-	int size2;
-	char *newstr;
-	
+	int		i;
+	int		j;
+	int		size1;
+	int		size2;
+	char	*newstr;
+
 	i = -1;
 	j = -1;
 	size1 = ft_strlen(str1);
 	size2 = ft_strlen(str2);
-	if(!str1 || !str2)
-		return(NULL);
+	if (!str1 || !str2)
+		return (NULL);
 	newstr = malloc((size1 + size2 + 1) * sizeof(char));
-	if(!newstr)
-		return(NULL);
+	if (!newstr)
+		return (NULL);
 	while (str1[++i])
 		newstr[i] = str1[i];
 	while (str2[++j])
 		newstr[i + j] = str2[j];
 	newstr[i + j] = '\0';
-	return(newstr);
+	return (newstr);
 }

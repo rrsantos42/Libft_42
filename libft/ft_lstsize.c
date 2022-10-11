@@ -6,13 +6,13 @@
 /*   By: rsantos <rsantos@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/13 17:46:28 by rsantos           #+#    #+#             */
-/*   Updated: 2022/08/15 19:05:14 by rsantos          ###   ########.fr       */
+/*   Updated: 2022/10/11 18:01:54 by rsantos          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_lstsize(t_list *lst)
+int	ft_lstsize(t_list *lst)
 {
 	int	i;
 
@@ -23,5 +23,4 @@ int ft_lstsize(t_list *lst)
 		i++;
 	}
 	return (i);
-
 }

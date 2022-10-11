@@ -6,16 +6,13 @@
 /*   By: rsantos <rsantos@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/29 13:09:10 by rsantos           #+#    #+#             */
-/*   Updated: 2022/08/24 16:11:02 by rsantos          ###   ########.fr       */
+/*   Updated: 2022/10/11 20:11:02 by rsantos          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-
-size_t 	ft_strlcat(char *dest, const char *src, size_t size)
-
-{
+size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
 	size_t	i;
 	size_t	j;
@@ -36,5 +33,4 @@ size_t 	ft_strlcat(char *dest, const char *src, size_t size)
 	}
 	dest[i] = '\0';
 	return (dest_size + src_size);
-}
 }

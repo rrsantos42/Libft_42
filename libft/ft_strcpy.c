@@ -6,7 +6,7 @@
 /*   By: rsantos <rsantos@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/29 13:09:05 by rsantos           #+#    #+#             */
-/*   Updated: 2022/08/24 16:08:17 by rsantos          ###   ########.fr       */
+/*   Updated: 2022/10/11 18:23:45 by rsantos          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char    *ft_strcpy(char *dest, const char *src)
     int i;
 
     i = -1;
-    while(src[++i])
+    while (src[++i])
         dest[i] = src[i];
     dest[i] = '\0';
     return (dest);
