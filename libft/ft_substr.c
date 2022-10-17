@@ -6,7 +6,7 @@
 /*   By: rsantos <rsantos@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/09 02:14:14 by rsantos           #+#    #+#             */
-/*   Updated: 2022/10/11 20:47:50 by rsantos          ###   ########.fr       */
+/*   Updated: 2022/10/17 17:52:50 by rsantos          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,21 +15,25 @@
 char	*ft_substr(char const *s, size_t start, size_t len)
 {
 	size_t	i;
+	size_t	j;
 	char	*str;
 
+	j = 0;
 	i = 0;
+	if(!s)
+		return(NULL);
 	if (len < ft_strlen((char *)s))
 		str = malloc((len + 1) * sizeof(char));
-	if (len > ft_strlen((char *)s))
+	if (len >= ft_strlen((char *)s))
 		str = malloc((ft_strlen((char *)s) + 1) * sizeof(char));
 	if (!str)
 		return (NULL);
-	while (s[start] && i < len)
+	while (s[i])
 	{
-		str[i] = s[start];
+		if (i >= start && j < len)
+			str[j++] = s[i];
 		i++;
-		start++;
 	}
-	str[i] = '\0';
+	str[j] = '\0';
 	return (str);
 }

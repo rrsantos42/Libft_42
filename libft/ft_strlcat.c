@@ -6,7 +6,7 @@
 /*   By: rsantos <rsantos@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/29 13:09:10 by rsantos           #+#    #+#             */
-/*   Updated: 2022/10/11 20:11:02 by rsantos          ###   ########.fr       */
+/*   Updated: 2022/10/17 17:46:07 by rsantos          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,11 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	size_t	src_size;
 	size_t	dest_size;
 
-	dest_size = ft_strlen(dest);
 	src_size = ft_strlen(src);
+	if(!size)
+		return(src_size);
+	dest_size = ft_strlen(dest);
+
 	i = dest_size;
 	j = 0;
 	if (size == 0 || size <= dest_size)

@@ -6,7 +6,7 @@
 /*   By: rsantos <rsantos@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/03 18:18:27 by rsantos           #+#    #+#             */
-/*   Updated: 2022/10/11 18:31:14 by rsantos          ###   ########.fr       */
+/*   Updated: 2022/10/17 18:00:24 by rsantos          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,12 @@ char	*ft_strjoin(const char *str1, const char *str2)
 	int		size2;
 	char	*newstr;
 
+	if (!str1 || !str2)
+		return (NULL);
 	i = -1;
 	j = -1;
 	size1 = ft_strlen(str1);
 	size2 = ft_strlen(str2);
-	if (!str1 || !str2)
-		return (NULL);
 	newstr = malloc((size1 + size2 + 1) * sizeof(char));
 	if (!newstr)
 		return (NULL);

@@ -6,7 +6,7 @@
 /*   By: rsantos <rsantos@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/09 01:09:34 by rsantos           #+#    #+#             */
-/*   Updated: 2022/10/11 18:19:06 by rsantos          ###   ########.fr       */
+/*   Updated: 2022/10/17 17:59:36 by rsantos          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,8 @@ char	**ft_split(char const *s, char c)
 	size_t	res;
 	char	**split;
 
+	if(!s)
+		return(NULL);
 	res = word_counter(s, c, 0);
 	split = malloc((res + 1) * sizeof(char *));
 	if (!split)

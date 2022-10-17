@@ -6,7 +6,7 @@
 /*   By: rsantos <rsantos@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/29 13:09:15 by rsantos           #+#    #+#             */
-/*   Updated: 2022/10/11 20:40:39 by rsantos          ###   ########.fr       */
+/*   Updated: 2022/10/17 17:55:36 by rsantos          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,10 @@ char	*ft_strncat(char *dest, const char *src, size_t size)
 
 	i = 0;
 	k = 0;
-	while (dest[k] != '\0')
+
+	while (dest[k])
 		k++;
-	while (src[i] != '\0' || i < size)
+	while (src[i] && i < size)
 	{
 		dest[k + i] = src[i];
 		i ++;
